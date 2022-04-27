@@ -1,6 +1,7 @@
 //! Arrays
 function getSecondLargest(nums) {
   let delDublicate = [...new Set(nums)];
+  console.log(delDublicate);
   let newArray = delDublicate.sort((a, b) => b - a);
   return newArray[1];
 }
